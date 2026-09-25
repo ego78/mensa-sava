@@ -1,1 +1,7 @@
-Mensa Sava V6: niente iframe. La modal resta nella PWA, l'autenticazione CIE/SPID si apre sul portale ufficiale. Al ritorno alla PWA compare il passaggio 'Accesso effettuato — torna al menu'.
+Mensa Sava - restyling moderno
+- Home ridisegnata con palette differenziata per servizio
+- Nuova icona launcher stilizzata
+- Animazioni leggere della home e feedback sui pulsanti
+- Link Ricarica credito e Diete speciali aggiornati
+- Popup interno CIE/SPID e WebView mantenuti invariati nel funzionamento
+DESIGN_REFERENCE.png mostra il concept grafico di riferimento.
