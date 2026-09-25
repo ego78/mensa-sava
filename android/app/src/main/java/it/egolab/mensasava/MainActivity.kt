@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
             alpha = 0f
             translationY = 20f
             animate().alpha(1f).translationY(0f).setStartDelay(300).setDuration(650).start()
-        };findViewById<android.widget.TextView>(R.id.heroAnim).apply{alpha=0f;translationX=45f;animate().alpha(1f).translationX(0f).setDuration(700).start()}
+        };findViewById<android.widget.ImageView>(R.id.heroImage).apply{alpha=0f;translationX=45f;animate().alpha(1f).translationX(0f).setDuration(700).start()}
   fun go(b:Button,u:String){b.setOnClickListener{it.animate().scaleX(.97f).scaleY(.97f).setDuration(70).withEndAction{it.animate().scaleX(1f).scaleY(1f).setDuration(120).start();showWebAuth(u)}.start()}}
-  go(findViewById(R.id.login),"https://www.comune.sava.ta.it/mensascolastica");go(findViewById(R.id.info),"https://www.comune.sava.ta.it/mensascolastica_info/");go(findViewById(R.id.recharge),"https://www.comune.sava.ta.it/pagamentiDovutiCittadino/259");go(findViewById(R.id.diets),"https://www.comune.sava.ta.it/mensascolastica_dietespeciali");go(findViewById(R.id.assenze),"https://www.comune.sava.ta.it/mensascolastica_assenze");go(findViewById(R.id.dashboard),"https://www.comune.sava.ta.it/mensascolastica")
+  go(findViewById(R.id.login),"https://www.comune.sava.ta.it/mensascolastica");go(findViewById(R.id.infoCard),"https://www.comune.sava.ta.it/mensascolastica_info/");go(findViewById(R.id.rechargeCard),"https://www.comune.sava.ta.it/pagamentiDovutiCittadino/259");go(findViewById(R.id.dietsCard),"https://www.comune.sava.ta.it/mensascolastica_dietespeciali");go(findViewById(R.id.assenzeCard),"https://www.comune.sava.ta.it/mensascolastica_assenze");go(findViewById(R.id.dashboardCard),"https://www.comune.sava.ta.it/mensascolastica")
  }
 }
