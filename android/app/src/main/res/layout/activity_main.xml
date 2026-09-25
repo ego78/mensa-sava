@@ -1,2 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F3F8FD" android:fillViewport="true"><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:background="@drawable/header_gradient"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏛  COMUNE DI SAVA" android:textColor="#DFF3FF" android:textStyle="bold" android:textSize="14sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mensa Scolastica" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="32sp" android:layout_marginTop="7dp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Servizi online per le famiglie" android:textColor="#EAF7FF" android:textSize="17sp" android:layout_marginTop="4dp"/><TextView android:id="@+id/heroAnim" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🥗   🍎   🥕   🍽️" android:textSize="28sp" android:gravity="end" android:layout_marginTop="8dp"/></LinearLayout><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp"><Button android:id="@+id/login" android:layout_width="match_parent" android:layout_height="68dp" android:backgroundTint="#0875D1" android:textColor="#FFFFFF" android:text="🔐   ACCEDI CON CIE / SPID   ›" android:textStyle="bold" android:textSize="16sp"/><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SERVIZI MENSA" android:textColor="#526A82" android:textStyle="bold" android:textSize="15sp" android:layout_marginTop="26dp" android:layout_marginBottom="10dp"/><Button android:id="@+id/info" android:layout_width="match_parent" android:layout_height="64dp" android:backgroundTint="#E6F5FF" android:textColor="#123A68" android:text="ⓘ   Crediti e informazioni                              ›" android:textAllCaps="false" android:textStyle="bold"/><Button android:id="@+id/recharge" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:backgroundTint="#E9F9ED" android:textColor="#164D31" android:text="💳   Ricarica credito                                     ›" android:textAllCaps="false" android:textStyle="bold"/><Button android:id="@+id/diets" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:backgroundTint="#FFF0F3" android:textColor="#71303C" android:text="🍎   Diete speciali                                       ›" android:textAllCaps="false" android:textStyle="bold"/><Button android:id="@+id/assenze" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:backgroundTint="#F2EDFF" android:textColor="#49377B" android:text="📅   Gestisci assenze                                    ›" android:textAllCaps="false" android:textStyle="bold"/><Button android:id="@+id/dashboard" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:backgroundTint="#FFF3E8" android:textColor="#70401C" android:text="🏠   Dashboard mensa                                   ›" android:textAllCaps="false" android:textStyle="bold"/><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🥕     🍅     🌿     🥦" android:textSize="25sp" android:gravity="center" android:layout_marginTop="24dp"/><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Una mensa più vicina alle tue esigenze" android:textColor="#1264A3" android:textStyle="italic" android:textSize="15sp" android:gravity="center" android:padding="8dp" android:layout_marginBottom="18dp"/></LinearLayout></LinearLayout></ScrollView>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent"
+ android:background="#F4F9FE" android:fillViewport="true" android:clipToPadding="false">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+  <FrameLayout android:layout_width="match_parent" android:layout_height="260dp" android:background="@drawable/header_gradient">
+   <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingTop="28dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏛  COMUNE DI SAVA" android:textColor="#E8F7FF" android:textStyle="bold" android:textSize="14sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mensa Scolastica" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="31sp" android:layout_marginTop="8dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Servizi online per le famiglie" android:textColor="#EAF7FF" android:textSize="17sp" android:layout_marginTop="4dp"/>
+   </LinearLayout>
+   <TextView android:id="@+id/heroAnim" android:layout_width="210dp" android:layout_height="105dp" android:layout_gravity="bottom|right"
+    android:gravity="center" android:text="👦🏻  👧🏻\n🍝   🥗" android:textSize="34sp" android:lineSpacingExtra="5dp"
+    android:background="#22FFFFFF" android:padding="8dp"/>
+  </FrameLayout>
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+   android:paddingLeft="18dp" android:paddingRight="18dp" android:paddingBottom="24dp">
+   <Button android:id="@+id/login" android:layout_width="match_parent" android:layout_height="76dp"
+    android:layout_marginTop="18dp" android:background="@drawable/login_card" android:textColor="#FFFFFF"
+    android:text="🔒   ACCEDI CON CIE / SPID        ❯" android:textStyle="bold" android:textSize="17sp"/>
+
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SERVIZI MENSA"
+    android:textColor="#4D6680" android:textStyle="bold" android:textSize="15sp" android:layout_marginTop="25dp" android:layout_marginBottom="10dp"/>
+
+   <Button android:id="@+id/info" android:layout_width="match_parent" android:layout_height="88dp" android:background="@drawable/card_blue"
+    android:text="ⓘ    Crediti e informazioni\n       Visualizza saldo e informazioni utili                         ❯"
+    android:textColor="#103C70" android:textSize="14sp" android:textAllCaps="false" android:gravity="center_vertical|start" android:paddingHorizontal="20dp"/>
+   <Button android:id="@+id/recharge" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginTop="10dp" android:background="@drawable/card_green"
+    android:text="💳    Ricarica credito\n       Effettua una nuova ricarica del conto mensa              ❯"
+    android:textColor="#174E37" android:textSize="14sp" android:textAllCaps="false" android:gravity="center_vertical|start" android:paddingHorizontal="20dp"/>
+   <Button android:id="@+id/diets" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginTop="10dp" android:background="@drawable/card_pink"
+    android:text="🍎    Diete speciali\n       Richiedi o gestisci esigenze alimentari                        ❯"
+    android:textColor="#703244" android:textSize="14sp" android:textAllCaps="false" android:gravity="center_vertical|start" android:paddingHorizontal="20dp"/>
+   <Button android:id="@+id/assenze" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginTop="10dp" android:background="@drawable/card_purple"
+    android:text="📅    Gestisci assenze\n       Comunica le assenze di tuo figlio/a                              ❯"
+    android:textColor="#493879" android:textSize="14sp" android:textAllCaps="false" android:gravity="center_vertical|start" android:paddingHorizontal="20dp"/>
+   <Button android:id="@+id/dashboard" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginTop="10dp" android:background="@drawable/card_orange"
+    android:text="🏠    Dashboard mensa\n       Visualizza pasti, presenze e storico completo                  ❯"
+    android:textColor="#71451F" android:textSize="14sp" android:textAllCaps="false" android:gravity="center_vertical|start" android:paddingHorizontal="20dp"/>
+
+   <TextView android:id="@+id/footerAnim" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="🥕      🍅      🌿      🥦" android:textSize="26sp" android:gravity="center" android:layout_marginTop="24dp"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Una mensa più vicina\nalle tue esigenze" android:textColor="#086BB1" android:textStyle="italic"
+    android:textSize="16sp" android:gravity="center" android:lineSpacingExtra="3dp" android:paddingTop="6dp" android:paddingBottom="18dp"/>
+  </LinearLayout>
+ </LinearLayout>
+</ScrollView>

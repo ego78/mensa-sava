@@ -24,7 +24,19 @@ class MainActivity : AppCompatActivity() {
  }
  override fun onResume(){super.onResume();authWebView?.onResume()};override fun onPause(){authWebView?.onPause();super.onPause()}
  @Deprecated("Deprecated in Java") override fun onBackPressed(){val w=authWebView;if(authDialog?.isShowing==true&&w!=null&&w.canGoBack())w.goBack() else if(authDialog?.isShowing==true)authDialog?.dismiss() else super.onBackPressed()}
- override fun onCreate(savedInstanceState:Bundle?){super.onCreate(savedInstanceState);setContentView(R.layout.activity_main);findViewById<android.widget.TextView>(R.id.heroAnim).apply{alpha=0f;translationX=45f;animate().alpha(1f).translationX(0f).setDuration(700).start()}
+ override fun onCreate(savedInstanceState:Bundle?){super.onCreate(savedInstanceState);setContentView(R.layout.activity_main)
+
+        // Animazioni leggere della Home, senza modificare il flusso CIE/SPID.
+        findViewById<android.widget.TextView>(R.id.heroAnim).apply {
+            alpha = 0f
+            translationX = 55f
+            animate().alpha(1f).translationX(0f).setDuration(700).start()
+        }
+        findViewById<android.widget.TextView>(R.id.footerAnim).apply {
+            alpha = 0f
+            translationY = 20f
+            animate().alpha(1f).translationY(0f).setStartDelay(300).setDuration(650).start()
+        };findViewById<android.widget.TextView>(R.id.heroAnim).apply{alpha=0f;translationX=45f;animate().alpha(1f).translationX(0f).setDuration(700).start()}
   fun go(b:Button,u:String){b.setOnClickListener{it.animate().scaleX(.97f).scaleY(.97f).setDuration(70).withEndAction{it.animate().scaleX(1f).scaleY(1f).setDuration(120).start();showWebAuth(u)}.start()}}
   go(findViewById(R.id.login),"https://www.comune.sava.ta.it/mensascolastica");go(findViewById(R.id.info),"https://www.comune.sava.ta.it/mensascolastica_info/");go(findViewById(R.id.recharge),"https://www.comune.sava.ta.it/pagamentiDovutiCittadino/259");go(findViewById(R.id.diets),"https://www.comune.sava.ta.it/mensascolastica_dietespeciali");go(findViewById(R.id.assenze),"https://www.comune.sava.ta.it/mensascolastica_assenze");go(findViewById(R.id.dashboard),"https://www.comune.sava.ta.it/mensascolastica")
  }
