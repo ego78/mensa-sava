@@ -1,7 +1,6 @@
 {
   "name": "Mensa Scolastica - Sava",
   "short_name": "Mensa Sava",
-  "description": "Accesso rapido ai servizi della mensa scolastica del Comune di Sava",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
