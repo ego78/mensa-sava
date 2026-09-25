@@ -1,1 +1,34 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F4F7FB"><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp"><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mensa Sava" android:textStyle="bold" android:textSize="30sp"/><Button android:id="@+id/login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Accedi con CIE / SPID"/><Button android:id="@+id/assenze" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Gestisci assenze"/><Button android:id="@+id/info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Credito e informazioni"/><Button android:id="@+id/dashboard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Dashboard mensa"/></LinearLayout></ScrollView>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F4F7FB">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+   android:padding="24dp" android:background="#075CA8">
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="COMUNE DI SAVA"
+    android:textColor="#D9ECFF" android:textStyle="bold" android:textSize="13sp"/>
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mensa Scolastica"
+    android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="29sp" android:layout_marginTop="4dp"/>
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="Servizi mensa sempre a portata di mano" android:textColor="#E8F4FF" android:textSize="15sp" android:layout_marginTop="6dp"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Benvenuto in Mensa Sava"
+    android:textColor="#17324D" android:textStyle="bold" android:textSize="23sp"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Accedi al portale ufficiale e gestisci rapidamente i servizi della mensa."
+    android:textColor="#68798A" android:textSize="15sp" android:layout_marginTop="5dp" android:layout_marginBottom="18dp"/>
+   <Button android:id="@+id/login" android:layout_width="match_parent" android:layout_height="60dp"
+    android:text="🔐  ACCEDI CON CIE / SPID" android:textStyle="bold"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SERVIZI"
+    android:textColor="#68798A" android:textStyle="bold" android:textSize="13sp" android:layout_marginTop="26dp" android:layout_marginBottom="8dp"/>
+   <Button android:id="@+id/assenze" android:layout_width="match_parent" android:layout_height="58dp"
+    android:text="📅  Gestisci assenze"/>
+   <Button android:id="@+id/info" android:layout_width="match_parent" android:layout_height="58dp"
+    android:layout_marginTop="10dp" android:text="💶  Credito e informazioni"/>
+   <Button android:id="@+id/dashboard" android:layout_width="match_parent" android:layout_height="58dp"
+    android:layout_marginTop="10dp" android:text="🏛️  Dashboard mensa"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="🔒 L'autenticazione CIE/SPID avviene esclusivamente sul portale ufficiale del Comune. Mensa Sava non legge né memorizza credenziali."
+    android:textColor="#68798A" android:textSize="12sp" android:padding="15dp" android:layout_marginTop="18dp" android:background="#E8F1F9"/>
+  </LinearLayout>
+ </LinearLayout>
+</ScrollView>
