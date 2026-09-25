@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="24dp"
+    android:background="@drawable/bg_auth_dialog">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Accesso sicuro" android:textColor="#075CA8"
+        android:textStyle="bold" android:textSize="24sp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="CIE / SPID • Comune di Sava" android:textColor="#17324D"
+        android:textStyle="bold" android:textSize="16sp" android:layout_marginTop="5dp"/>
+
+    <TextView android:id="@+id/authMessage"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Premi Continua per aprire l’autenticazione ufficiale. Mensa Sava resterà aperta in background."
+        android:textColor="#617385" android:textSize="15sp"
+        android:layout_marginTop="14dp" android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/startAuth" android:layout_width="match_parent"
+        android:layout_height="58dp" android:text="CONTINUA CON CIE / SPID"
+        android:textStyle="bold"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Dopo l’accesso torna a Mensa Sava. Qui troverai il pulsante per chiudere questa finestra."
+        android:textColor="#68798A" android:textSize="12sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button android:id="@+id/closeAuth" android:layout_width="match_parent"
+        android:layout_height="52dp" android:text="CHIUDI E TORNA ALL’APP"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
