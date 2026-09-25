@@ -149,17 +149,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        fun animateAndOpen(button: Button, url: String) {
+            button.animate().scaleX(0.96f).scaleY(0.96f).setDuration(80).withEndAction {
+                button.animate().scaleX(1f).scaleY(1f).setDuration(120).start()
+                showWebAuth(url)
+            }.start()
+        }
+
         findViewById<Button>(R.id.login).setOnClickListener {
-            showWebAuth("https://www.comune.sava.ta.it/mensascolastica")
+            animateAndOpen(it as Button, "https://www.comune.sava.ta.it/mensascolastica")
         }
         findViewById<Button>(R.id.assenze).setOnClickListener {
-            showWebAuth("https://www.comune.sava.ta.it/mensascolastica_assenze")
+            animateAndOpen(it as Button, "https://www.comune.sava.ta.it/mensascolastica_assenze")
         }
         findViewById<Button>(R.id.info).setOnClickListener {
-            showWebAuth("https://www.comune.sava.ta.it/mensascolastica_info/")
+            animateAndOpen(it as Button, "https://www.comune.sava.ta.it/mensascolastica_info/")
+        }
+        findViewById<Button>(R.id.recharge).setOnClickListener {
+            animateAndOpen(it as Button, "https://www.comune.sava.ta.it/pagamentiDovutiCittadino/259")
+        }
+        findViewById<Button>(R.id.diets).setOnClickListener {
+            animateAndOpen(it as Button, "https://www.comune.sava.ta.it/mensascolastica_dietespeciali")
         }
         findViewById<Button>(R.id.dashboard).setOnClickListener {
-            showWebAuth("https://www.comune.sava.ta.it/mensascolastica")
+            animateAndOpen(it as Button, "https://www.comune.sava.ta.it/mensascolastica")
         }
     }
 }
