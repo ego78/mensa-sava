@@ -1,10 +1,1 @@
-<resources>
- <style name="Theme.MensaSava" parent="Theme.Material3.Light.NoActionBar">
-  <item name="colorPrimary">#075CA8</item>
-  <item name="colorSecondary">#0A77C9</item>
-  <item name="android:fontFamily">sans</item>
-  <item name="android:statusBarColor">#075CA8</item>
-  <item name="android:navigationBarColor">#F4F7FB</item>
-  <item name="android:windowLightNavigationBar">true</item>
- </style>
-</resources>
+<resources><style name="Theme.MensaSava" parent="Theme.Material3.Light.NoActionBar"><item name="colorPrimary">#0875D1</item><item name="colorSecondary">#0A98D5</item><item name="android:fontFamily">sans</item><item name="android:statusBarColor">#075CA8</item><item name="android:navigationBarColor">#F3F8FD</item><item name="android:windowLightNavigationBar">true</item></style></resources>
