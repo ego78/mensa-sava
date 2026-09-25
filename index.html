@@ -1,1 +1,32 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#075ca8"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="style.css"><title>Mensa Sava</title></head><body><header>🍽️ <div><small>Comune di Sava</small><h1>Mensa Scolastica</h1></div></header><main><h2>La mensa a portata di mano</h2><p>Accesso rapido alle funzioni del portale ufficiale.</p><a class="hero smart" data-key="assenze" href="https://www.comune.sava.ta.it/mensascolastica_assenze">📅 <div><b>Gestisci assenze</b><small>Inserisci o rimuovi un'assenza</small></div>›</a><div id="resume" hidden><b>↩️ Accesso completato?</b><p>Se hai terminato CIE/SPID, torna direttamente alla funzione scelta.</p><button id="go">Continua</button><button id="cancel">Annulla</button></div><section><a class="card smart" data-key="info" href="https://www.comune.sava.ta.it/mensascolastica_info/">💶<b>Credito e informazioni</b><small>Credito, bambini, ISEE e pagamenti</small></a><a class="card" href="https://www.comune.sava.ta.it/mensascolastica">💳<b>Ricarica / Dashboard</b><small>Apri il servizio ufficiale</small></a><a class="card" href="https://www.comune.sava.ta.it/mensascolastica">🍽️<b>Diete speciali</b><small>Gestisci le diete</small></a><a class="card" href="https://www.comune.sava.ta.it/mensascolastica">👤<b>Secondo accesso</b><small>Gestisci accesso aggiuntivo</small></a></section><aside>🔒 La PWA non memorizza credenziali, PIN CIE o token.</aside></main><script src="app.js"></script></body></html>
+<!doctype html><html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#075ca8"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mensa Sava">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css"><title>Mensa Sava</title></head><body>
+<header><div class="logo">🍽️</div><div><small>Comune di Sava</small><h1>Mensa Scolastica</h1></div></header>
+<main>
+<section class="intro"><small>ACCESSO RAPIDO</small><h2>Mensa Sava</h2><p>Accedi al portale comunale in una finestra separata e poi torna qui per scegliere la funzione.</p></section>
+
+<section class="loginbox">
+<div class="lock">🔐</div><div><h3>Accesso al servizio mensa</h3><p>SPID/CIE vengono gestiti esclusivamente dal portale ufficiale.</p></div>
+<button id="loginBtn">Accedi con CIE / SPID</button>
+</section>
+
+<section id="returnBox" class="returnbox" hidden>
+<div class="ok">✓</div><div><h3>Hai completato l'accesso?</h3><p>Chiudi la finestra del Comune e continua da questo menu.</p></div>
+<button id="returnMenu">Torna al menu</button>
+</section>
+
+<div id="menu">
+<h3 class="title">Menu mensa</h3>
+<div class="grid">
+<a href="https://www.comune.sava.ta.it/mensascolastica_assenze"><span>📅</span><b>Assenze</b><small>Inserisci o rimuovi assenze</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica_info/"><span>💶</span><b>Credito e informazioni</b><small>Situazione mensa e pagamenti</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica"><span>💳</span><b>Ricarica</b><small>Ricarica il portafoglio</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica"><span>🍽️</span><b>Diete speciali</b><small>Gestione diete</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica"><span>👤</span><b>Secondo accesso</b><small>Gestione accesso aggiuntivo</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica"><span>🏛️</span><b>Dashboard</b><small>Portale mensa completo</small></a>
+</div></div>
+<aside>🔒 Nessuna credenziale, PIN CIE o token viene salvato da Mensa Sava.</aside>
+</main><script src="app.js"></script></body></html>

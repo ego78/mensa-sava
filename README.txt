@@ -1,1 +1,1 @@
-Mensa Sava V2 — sostituire i file del repository GitHub Pages mantenendo la cartella icons. Il service worker V2 forza l'aggiornamento della cache.
+Mensa Sava V4. Login CIE/SPID aperto in finestra/scheda separata quando il browser lo consente. La PWA resta disponibile e mostra il pannello di ritorno al menu. Nessuna credenziale viene memorizzata.

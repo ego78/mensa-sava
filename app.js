@@ -1,1 +1,16 @@
-if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));const T={assenze:'https://www.comune.sava.ta.it/mensascolastica_assenze',info:'https://www.comune.sava.ta.it/mensascolastica_info/'};const r=document.querySelector('#resume');function show(){r.hidden=!T[localStorage.getItem('pending')]}document.querySelectorAll('.smart').forEach(a=>a.onclick=()=>localStorage.setItem('pending',a.dataset.key));document.querySelector('#go').onclick=()=>{let k=localStorage.getItem('pending');if(T[k]){localStorage.removeItem('pending');location.href=T[k]}};document.querySelector('#cancel').onclick=()=>{localStorage.removeItem('pending');show()};addEventListener('pageshow',show);document.addEventListener('visibilitychange',()=>{if(!document.hidden)show()});show();
+if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
+const login=document.querySelector('#loginBtn'), box=document.querySelector('#returnBox'), ret=document.querySelector('#returnMenu');
+let authWindow=null;
+login.addEventListener('click',()=>{
+  localStorage.setItem('mensaLoginStarted','1');
+  box.hidden=false;
+  authWindow=window.open('https://www.comune.sava.ta.it/mensascolastica','mensaLogin','popup=yes,width=520,height=760');
+  if(!authWindow){ location.href='https://www.comune.sava.ta.it/mensascolastica'; }
+});
+ret.addEventListener('click',()=>{box.hidden=true;document.querySelector('#menu').scrollIntoView({behavior:'smooth'});});
+function resumed(){
+ if(localStorage.getItem('mensaLoginStarted')==='1') box.hidden=false;
+}
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)resumed()});
+addEventListener('pageshow',resumed);
+resumed();
