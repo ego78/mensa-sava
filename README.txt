@@ -1,1 +1,1 @@
-V5: prova login Comune di Sava dentro modal/iframe sovrapposto alla PWA. Se il server blocca iframe via CSP/X-Frame-Options, sarà necessario usare una finestra browser esterna.
+Mensa Sava V6: niente iframe. La modal resta nella PWA, l'autenticazione CIE/SPID si apre sul portale ufficiale. Al ritorno alla PWA compare il passaggio 'Accesso effettuato — torna al menu'.
