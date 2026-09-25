@@ -1,6 +1,1 @@
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'))}
-let deferredPrompt;const btn=document.getElementById('installBtn');
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;btn.hidden=false});
-btn.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;btn.hidden=true});
-const isiOS=/iphone|ipad|ipod/i.test(navigator.userAgent);const standalone=window.navigator.standalone;
-if(isiOS&&!standalone)document.getElementById('iosHelp').hidden=false;
+if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));let p;const b=document.querySelector('#installBtn');addEventListener('beforeinstallprompt',e=>{e.preventDefault();p=e;b.hidden=false});b.onclick=async()=>{if(p){p.prompt();await p.userChoice;p=null;b.hidden=true}};if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!navigator.standalone)document.querySelector('#iosHelp').hidden=false;
