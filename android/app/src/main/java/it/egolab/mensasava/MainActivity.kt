@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
  override fun onCreate(savedInstanceState:Bundle?){super.onCreate(savedInstanceState);setContentView(R.layout.activity_main)
 
         // Animazioni leggere della Home, senza modificare il flusso CIE/SPID.
-        findViewById<android.widget.TextView>(R.id.heroAnim).apply {
+        findViewById<android.widget.ImageView>(R.id.heroImage).apply {
             alpha = 0f
             translationX = 55f
             animate().alpha(1f).translationX(0f).setDuration(700).start()
