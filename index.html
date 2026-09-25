@@ -6,27 +6,24 @@
 <link rel="stylesheet" href="style.css"><title>Mensa Sava</title></head><body>
 <header><div class="logo">🍽️</div><div><small>Comune di Sava</small><h1>Mensa Scolastica</h1></div></header>
 <main>
-<section class="intro"><small>ACCESSO RAPIDO</small><h2>Mensa Sava</h2><p>Accedi al portale comunale in una finestra separata e poi torna qui per scegliere la funzione.</p></section>
-
-<section class="loginbox">
-<div class="lock">🔐</div><div><h3>Accesso al servizio mensa</h3><p>SPID/CIE vengono gestiti esclusivamente dal portale ufficiale.</p></div>
-<button id="loginBtn">Accedi con CIE / SPID</button>
-</section>
-
-<section id="returnBox" class="returnbox" hidden>
-<div class="ok">✓</div><div><h3>Hai completato l'accesso?</h3><p>Chiudi la finestra del Comune e continua da questo menu.</p></div>
-<button id="returnMenu">Torna al menu</button>
-</section>
-
-<div id="menu">
-<h3 class="title">Menu mensa</h3>
+<h2>Mensa Sava</h2><p class="lead">Accedi al portale comunale e gestisci rapidamente la mensa scolastica.</p>
+<button id="openLogin" class="login">🔐 Accedi con CIE / SPID</button>
 <div class="grid">
-<a href="https://www.comune.sava.ta.it/mensascolastica_assenze"><span>📅</span><b>Assenze</b><small>Inserisci o rimuovi assenze</small></a>
-<a href="https://www.comune.sava.ta.it/mensascolastica_info/"><span>💶</span><b>Credito e informazioni</b><small>Situazione mensa e pagamenti</small></a>
-<a href="https://www.comune.sava.ta.it/mensascolastica"><span>💳</span><b>Ricarica</b><small>Ricarica il portafoglio</small></a>
-<a href="https://www.comune.sava.ta.it/mensascolastica"><span>🍽️</span><b>Diete speciali</b><small>Gestione diete</small></a>
-<a href="https://www.comune.sava.ta.it/mensascolastica"><span>👤</span><b>Secondo accesso</b><small>Gestione accesso aggiuntivo</small></a>
-<a href="https://www.comune.sava.ta.it/mensascolastica"><span>🏛️</span><b>Dashboard</b><small>Portale mensa completo</small></a>
-</div></div>
-<aside>🔒 Nessuna credenziale, PIN CIE o token viene salvato da Mensa Sava.</aside>
-</main><script src="app.js"></script></body></html>
+<a href="https://www.comune.sava.ta.it/mensascolastica_assenze">📅<b>Assenze</b><small>Gestisci le assenze</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica_info/">💶<b>Credito e informazioni</b><small>Situazione mensa</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica">💳<b>Ricarica</b><small>Portafoglio mensa</small></a>
+<a href="https://www.comune.sava.ta.it/mensascolastica">🍽️<b>Diete speciali</b><small>Gestisci le diete</small></a>
+</div>
+<aside>🔒 CIE/SPID e i dati personali sono gestiti dal portale ufficiale del Comune.</aside>
+</main>
+
+<div id="modal" class="modal" hidden>
+ <div class="sheet">
+  <div class="bar"><div><b>Accesso Mensa Sava</b><small>Portale ufficiale del Comune</small></div><button id="x">✕</button></div>
+  <div class="hint">Effettua l'accesso con CIE/SPID. <b>Quando hai terminato, premi “Chiudi e torna all'app”.</b></div>
+  <iframe id="loginFrame" title="Accesso Comune di Sava"></iframe>
+  <div id="blocked" class="blocked" hidden><b>Il portale non può essere visualizzato nel popup.</b><span>Aprilo nel browser, completa CIE/SPID e poi torna a Mensa Sava.</span><a target="_blank" rel="noopener" href="https://www.comune.sava.ta.it/mensascolastica">Apri accesso nel browser</a></div>
+  <button id="done" class="done">✓ Chiudi e torna all'app</button>
+ </div>
+</div>
+<script src="app.js"></script></body></html>

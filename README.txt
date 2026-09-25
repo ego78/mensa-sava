@@ -1,1 +1,1 @@
-Mensa Sava V4. Login CIE/SPID aperto in finestra/scheda separata quando il browser lo consente. La PWA resta disponibile e mostra il pannello di ritorno al menu. Nessuna credenziale viene memorizzata.
+V5: prova login Comune di Sava dentro modal/iframe sovrapposto alla PWA. Se il server blocca iframe via CSP/X-Frame-Options, sarà necessario usare una finestra browser esterna.
