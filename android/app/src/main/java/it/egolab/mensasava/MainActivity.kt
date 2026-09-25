@@ -51,6 +51,14 @@ class MainActivity : AppCompatActivity() {
         web.settings.setSupportMultipleWindows(false)
         web.settings.userAgentString = WebSettings.getDefaultUserAgent(this)
 
+        // V4.1: solo adattamento responsive del contenuto interno.
+        // Popup, barra, dimensioni e flusso CIE/SPID restano invariati.
+        web.settings.useWideViewPort = true
+        web.settings.loadWithOverviewMode = true
+        web.settings.builtInZoomControls = true
+        web.settings.displayZoomControls = false
+        web.settings.textZoom = 85
+
         web.webChromeClient = object : WebChromeClient() {
             override fun onProgressChanged(view: WebView?, newProgress: Int) {
                 progress.progress = newProgress
